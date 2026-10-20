@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Goodbeat | Creative marketing for medical aesthetics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f3ec;--ink:#1f2a3b;--navy:#2d3a4f;--clay:#a65f45;--sand:#e5ddcf;--gold:#d9b24f;--line:rgba(31,42,59,.2);--onnavy:#f7f3ec;
+--serif:'Newsreader',Georgia,'Times New Roman',serif;--sans:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171f2c;--ink:#f1ece2;--sand:#2a3648;--line:rgba(241,236,226,.22)}}
+:root[data-theme="dark"]{--bg:#171f2c;--ink:#f1ece2;--sand:#2a3648;--line:rgba(241,236,226,.22)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--clay);outline-offset:3px}
+h1,h2,h3,p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.025em}
+.small{font-size:10px;letter-spacing:.18em;text-transform:uppercase}
+.link{display:inline-flex;gap:28px;align-items:center;font-size:13px;border-bottom:1px solid currentColor;padding-bottom:5px;transition:gap .2s}
+.link:hover{gap:40px}
+header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-family:var(--serif);font-size:24px;letter-spacing:-.03em}
+.nav ul{display:flex;gap:34px;list-style:none;margin:0;padding:0;font-size:12px}
+.nav a:hover{color:var(--clay)}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;padding:88px 0 64px;align-items:end}
+.hero .small{display:block;margin-bottom:34px}
+.hero h1{font-size:clamp(52px,7.4vw,92px);line-height:.95;margin-bottom:34px}
+.hero p{max-width:400px;margin-bottom:34px}
+.art{position:relative;aspect-ratio:1.05;width:100%}
+.art div{position:absolute}
+.b-sand{left:0;top:0;width:50%;height:52%;background:var(--sand)}
+.b-navy{right:0;top:0;width:50%;height:68%;background:var(--navy)}
+.b-clay{left:0;top:30%;width:46%;height:45%;background:var(--clay)}
+.b-line{left:12%;top:36%;width:42%;height:42%;border:1px solid rgba(247,243,236,.7)}
+.b-sand2{right:4%;bottom:0;width:34%;height:34%;background:var(--sand);box-shadow:0 0 0 1px var(--line)}
+.b-tag{left:6%;bottom:6%;background:var(--bg);color:var(--ink);padding:6px 12px}
+.art-foot{display:block;text-align:right;margin-top:14px;font-size:9px;letter-spacing:.2em;text-transform:uppercase;opacity:.8}
+.sec{padding:72px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px}
+.head h2{font-size:36px;line-height:1}
+.head p{font-size:12px;opacity:.85;text-align:right}
+.rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.rows a{display:grid;grid-template-columns:56px 1.2fr 1.3fr;gap:20px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line);transition:padding-left .2s,background .2s}
+.rows a:hover{padding-left:12px;background:rgba(166,95,69,.09)}
+.rows .n{font-size:10px;opacity:.6}
+.rows .t{font-family:var(--serif);font-size:22px;letter-spacing:-.02em}
+.rows .d{font-size:12px;max-width:300px;opacity:.85}
+.phil{background:var(--navy);color:var(--onnavy);padding:84px 0 96px}
+.phil .wrap{display:grid;grid-template-columns:1fr 2fr;gap:40px}
+.phil .dash{width:26px;border-top:1px solid var(--gold);margin-top:10px}
+.phil h2{font-size:clamp(44px,5.5vw,68px);line-height:1;margin-bottom:46px;max-width:520px}
+.phil p{font-size:12px;max-width:300px}
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.work a{display:block}
+.work .img{aspect-ratio:4/3;margin-bottom:14px;transition:transform .3s;display:flex;align-items:end;padding:14px;color:var(--onnavy)}
+.work a:hover .img{transform:translateY(-4px)}
+.w1{background:var(--clay)}.w2{background:var(--navy)}.w3{background:var(--sand);color:var(--ink)!important}
+.work b{display:block;font-family:var(--serif);font-weight:400;font-size:20px;letter-spacing:-.02em}
+.work i{font-size:12px;opacity:.8}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.why h2{font-size:clamp(36px,4.4vw,52px);line-height:1;margin-bottom:22px}
+.why p{max-width:400px}
+.pts{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.pts li{display:grid;grid-template-columns:48px 1fr;padding:16px 0;border-bottom:1px solid var(--line);font-size:14px}
+.pts span{font-family:var(--serif);font-size:20px;color:var(--clay)}
+.cta{background:var(--clay);color:#fff8f0;padding:80px 0}
+.cta .wrap{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap}
+.cta h2{font-size:clamp(40px,5.2vw,64px);line-height:1;max-width:620px}
+.cta .link{font-size:15px}
+footer{padding:28px 0;font-size:12px;opacity:.75}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:860px){
+.wrap{padding:0 24px}
+.nav ul{gap:18px}.nav li:nth-child(n+3){display:none}
+.hero{grid-template-columns:1fr;padding:56px 0 40px;gap:40px}
+.head{flex-direction:column;align-items:start}.head p{text-align:left}
+.rows a{grid-template-columns:34px 1fr}.rows .d{grid-column:2}
+.phil .wrap,.why{grid-template-columns:1fr;gap:28px}
+.work{grid-template-columns:1fr}
+.sec{padding:52px 0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="logo" href="#top">goodbeat</a>
+  <ul><li><a href="#services">Services</a></li><li><a href="#work">Work</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+</div></header>
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <span class="small">Creative marketing for medical aesthetics</span>
+      <h1 class="serif">A better kind of growth.</h1>
+      <p>Creative marketing for medical aesthetics. From brand and content to campaigns, websites and patient acquisition.</p>
+      <a class="link" href="#contact">Let&rsquo;s talk <span aria-hidden="true">&#8599;</span></a>
+    </div>
+    <div>
+      <div class="art" role="img" aria-label="Abstract composition of navy, clay and sand shapes">
+        <div class="b-sand"></div><div class="b-navy"></div><div class="b-clay"></div><div class="b-line"></div><div class="b-sand2"></div>
+        <div class="b-tag small">Editorial image placeholder</div>
+      </div>
+      <span class="art-foot">Brand / Content / Growth</span>
+    </div>
+  </div>
+
+  <section class="wrap sec" id="services">
+    <div class="head"><h2 class="serif">What we do</h2><p>A considered creative partner for ambitious clinics.</p></div>
+    <ul class="rows">
+      <li><a href="#contact"><span class="n">01</span><span class="t">Brand Strategy &amp; Identity</span><span class="d">A distinctive foundation for how your clinic looks, sounds and feels.</span></a></li>
+      <li><a href="#contact"><span class="n">02</span><span class="t">Content &amp; Social</span><span class="d">Considered storytelling that builds connection over time.</span></a></li>
+      <li><a href="#contact"><span class="n">03</span><span class="t">Paid Media</span><span class="d">Thoughtful campaigns made to reach the right people.</span></a></li>
+      <li><a href="#contact"><span class="n">04</span><span class="t">Website Design</span><span class="d">Digital experiences that make a compelling first impression.</span></a></li>
+      <li><a href="#contact"><span class="n">05</span><span class="t">Patient Acquisition</span><span class="d">A clearer path from first interest to meaningful enquiry.</span></a></li>
+    </ul>
+  </section>
+
+  <div class="phil"><div class="wrap">
+    <div class="dash"></div>
+    <div><h2 class="serif">Good work. Better outcomes.</h2><p>The right ideas make every part of the patient journey feel more considered.</p></div>
+  </div></div>
+
+  <section class="wrap sec" id="work">
+    <div class="head"><h2 class="serif">Selected work</h2><p>Case studies are on the way.</p></div>
+    <div class="work">
+      <a href="#contact"><div class="img w1 small">Case study 01</div><b>Clinic name</b><i>Brand, Content</i></a>
+      <a href="#contact"><div class="img w2 small">Case study 02</div><b>Clinic name</b><i>Paid Media, Social</i></a>
+      <a href="#contact"><div class="img w3 small">Case study 03</div><b>Clinic name</b><i>Website, Patient Acquisition</i></a>
+    </div>
+  </section>
+
+  <section class="wrap sec why" id="about">
+    <div><h2 class="serif">A smaller agency, by design.</h2><p>We keep things focused and collaborative, so you get thoughtful strategy, beautiful content and a team that cares about your growth.</p></div>
+    <ul class="pts">
+      <li><span>&mdash;</span>Specialists in medical aesthetics</li>
+      <li><span>&mdash;</span>Strategy, creative and execution in one team</li>
+      <li><span>&mdash;</span>Real support, not just reporting</li>
+      <li><span>&mdash;</span>A long-term partner in your growth</li>
+    </ul>
+  </section>
+
+  <div class="cta" id="contact"><div class="wrap">
+    <h2 class="serif">Build a brand more people believe in.</h2>
+    <a class="link" href="mailto:hello@goodbeat.co">Start a conversation <span aria-hidden="true">&#8599;</span></a>
+  </div></div>
+</main>
+<footer><div class="wrap"><span>&copy; 2026 Goodbeat</span><span>Creative marketing for medical aesthetics</span></div></footer>
+</body>
+</html>
